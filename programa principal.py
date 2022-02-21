@@ -13,11 +13,11 @@ def viw(op):
 	global dados, nev, fim, jlifesmax, jlifes, totex, ni, maxex, arefl, lamp, dmin, dmax, luz, sod, stage1, stage2, stage3, mapa
 	global money, pocao, nome
 	if op == 1:
-		arquivo = open('__saves__/save1.txt', 'r')
+		arquivo = open('save1.txt', 'r')
 	elif op == 2:
-		arquivo = open('__saves__/save2.txt', 'r')
+		arquivo = open('save2.txt', 'r')
 	elif op == 3:
-		arquivo = open('__saves__/save3.txt', 'r')
+		arquivo = open('save3.txt', 'r')
 	for linha in arquivo:
 		linha = linha.rstrip()
 		if op == 1:
@@ -31,11 +31,11 @@ def viw(op):
 
 def save(op):
 	if op == 1:
-		arquivo = open('__saves__/save1.txt', 'w')
+		arquivo = open('save1.txt', 'w')
 	elif op == 2:
-		arquivo = open('__saves__/save2.txt', 'w')
+		arquivo = open('save2.txt', 'w')
 	elif op == 3:
-		arquivo = open('__saves__/save3.txt', 'w')
+		arquivo = open('save3.txt', 'w')
 	arquivo.write(f'{nome}' + '\n')
 	arquivo.write(f'{nev}' + '\n')
 	arquivo.write(f'{fim}' + '\n')
@@ -71,11 +71,11 @@ def change(op):
 	global dados, nev, fim, jlifesmax, jlifes, totex, ni, maxex, arefl, lamp, dmin, dmax, luz, sod, stage1, stage2, stage3, mapa
 	global money, pocao, nome, esp, elf, city, rpas, resp, zan, stage4
 	if op == 1:
-		arquivo = open('__saves__/save1.txt', 'r')
+		arquivo = open('save1.txt', 'r')
 	elif op == 2:
-		arquivo = open('__saves__/save2.txt', 'r')
+		arquivo = open('save2.txt', 'r')
 	elif op == 3:
-		arquivo = open('__saves__/save3.txt', 'r')
+		arquivo = open('save3.txt', 'r')
 	for linha in arquivo:
 		linha = linha.rstrip()
 		dados.append(linha)
